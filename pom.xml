@@ -82,11 +82,7 @@
     <scope>test</scope>
 </dependency>
 
-   	<dependency>
-   		<groupId>Booking_Automation</groupId>
-   		<artifactId>Booking_Automation</artifactId>
-   		<version>0.0.1-SNAPSHOT</version>
-   	</dependency>
+  
    </dependencies>
 <build>
 	 <pluginManagement>
