@@ -16,7 +16,7 @@ public class BaseClass {
 				"C:\\Users\\RAHUL\\eclipse-workspace\\JenkinsDemo\\Resources\\chromedriver.exe");
 		driver = new ChromeDriver();
 
-		driver.get("https://parabank.parasoft.com/");
+		driver.get("https://practicetestautomation.com/practice-test-login/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

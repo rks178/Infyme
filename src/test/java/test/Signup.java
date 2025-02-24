@@ -17,9 +17,10 @@ public class Signup extends BaseClass {
 		String password = prop.getProperty("password");
 		driver.findElement(By.name("username")).sendKeys(username);
 		driver.findElement(By.name("password")).sendKeys(password);
-		driver.findElement(By.xpath("//input[@value='Log In']")).click();
-		String title = driver.findElement(By.xpath("//*[text()='Accounts Overview']")).getText();
-		Assert.assertEquals(title, "Accounts Overview");
+		driver.findElement(By.id("submit")).click();
+		String title = driver
+				.findElement(By.xpath("//*[text()='Congratulations student. You successfully logged in!']")).getText();
+		Assert.assertEquals(title, "Congratulations student. You successfully logged in");
 	}
 
 }
