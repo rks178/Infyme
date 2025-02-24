@@ -26,5 +26,16 @@ pipeline{
                 junit '**/target/surefire-reports/*.xml'
             }
 		}
+		post {
+        success {
+            emailext subject: 'Build Successful 🎉',
+                     body: 'The build was successful! ✅',
+                     to: 'rahulsingh6811@gmail.com'
+        }
+        failure {
+            emailext subject: 'Build Failed ❌',
+                     body: 'The build has failed! Please check logs. 🔍',
+                     to: 'rahulsingh6811@gmail.com'
+        }
 	}
 }
