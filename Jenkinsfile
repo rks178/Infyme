@@ -11,13 +11,13 @@ pipeline{
 		}
 		stage('Build project'){
 			steps{
-				sh 'mvn clean compile -Dheadless=true'
+				sh 'mvn clean compile'
 			}
 			
 		}
 		stage('Run selenium test'){
 			steps{
-				sh 'mvn test'
+				sh 'mvn test -Dheadless=true'
 			}
 			
 		}
