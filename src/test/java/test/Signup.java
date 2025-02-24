@@ -20,7 +20,7 @@ public class Signup extends BaseClass {
 		driver.findElement(By.id("submit")).click();
 		String title = driver
 				.findElement(By.xpath("//*[text()='Congratulations student. You successfully logged in!']")).getText();
-		Assert.assertEquals(title, "Congratulations student. You successfully logged in");
+		Assert.assertEquals(title, "Congratulations student. You successfully logged in!");
 	}
 
 }
