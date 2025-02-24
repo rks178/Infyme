@@ -1,4 +1,4 @@
-pigitpeline{
+pipeline{
 	agent any
 	
 	stages{
