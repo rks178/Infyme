@@ -26,6 +26,7 @@ pipeline{
                 junit '**/target/surefire-reports/*.xml'
             }
 		}
+		}
 		post {
         success {
             emailext subject: 'Build Successful 🎉',
@@ -38,4 +39,5 @@ pipeline{
                      to: 'rahulsingh6811@gmail.com'
         }
 	}
+
 }
